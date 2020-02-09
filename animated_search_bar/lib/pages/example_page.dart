@@ -2,15 +2,15 @@ import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:receipt_scan/homescreen/homescreen_bloc.dart';
 
-class LatestReceipts extends StatefulWidget {
+class ExamplePage extends StatefulWidget {
 
   final HomeScreenBloc bloc;
-  const LatestReceipts({Key key, @required this.bloc}) : super(key: key);
+  const ExamplePage({Key key, @required this.bloc}) : super(key: key);
   @override
-  _LatestReceiptsState createState() => _LatestReceiptsState();
+  _ExamplePageState createState() => _ExamplePageState();
 }
 
-class _LatestReceiptsState extends State<LatestReceipts> {
+class _ExamplePageState extends State<ExamplePage> {
 
   FocusNode _focusNode = FocusNode();
 

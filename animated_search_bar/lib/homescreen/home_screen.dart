@@ -1,7 +1,7 @@
 import 'package:eva_icons_flutter/eva_icons_flutter.dart';
 import 'package:flutter/material.dart';
 import 'package:receipt_scan/homescreen/homescreen_bloc.dart';
-import 'package:receipt_scan/pages/latest_receipts.dart';
+import 'package:receipt_scan/pages/example_page.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -31,7 +31,7 @@ class _HomeScreenState extends State<HomeScreen> {
               IndexedStack(
                 index: index,
                 children: <Widget>[
-                  LatestReceipts(bloc: _bloc),
+                  ExamplePage(bloc: _bloc),
                   Container(),
                   Container(),
                   Container()
