@@ -87,7 +87,7 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextFormField(
                     onTap: () {
-
+                      _welcomeScreenBloc..add(OpenLogin(margin: 0, borderRadius: 0));
                     },
                     decoration: InputDecoration.collapsed(
                         hintText: 'Email'
@@ -107,6 +107,9 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextFormField(
+                    onTap: () {
+                      _welcomeScreenBloc..add(OpenLogin(margin: 0, borderRadius: 0));
+                    },
                     decoration: InputDecoration.collapsed(
                         hintText: 'Password'
                     ),
@@ -115,7 +118,7 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
               ),
               GestureDetector(
                 onTap: () {
-
+                  
                 },
                 child: Container(
                   height: 55,
@@ -220,6 +223,9 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextFormField(
+                    onTap: () {
+                      _welcomeScreenBloc..add(OpenRegister(margin: 0, borderRadius: 0));
+                    }
                     decoration: InputDecoration.collapsed(
                         hintText: 'Name'
                     ),
@@ -238,6 +244,9 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextFormField(
+                    onTap: () {
+                      _welcomeScreenBloc..add(OpenRegister(margin: 0, borderRadius: 0));
+                    }
                     decoration: InputDecoration.collapsed(
                         hintText: 'Email'
                     ),
@@ -256,6 +265,9 @@ class _WelcomingScreenState extends State<WelcomingScreen> with TickerProviderSt
                 child: Padding(
                   padding: const EdgeInsets.symmetric(horizontal: 20),
                   child: TextFormField(
+                    onTap: () {
+                      _welcomeScreenBloc..add(OpenRegister(margin: 0, borderRadius: 0));
+                    }
                     decoration: InputDecoration.collapsed(
                         hintText: 'Password'
                     ),
